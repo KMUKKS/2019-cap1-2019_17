@@ -1,68 +1,106 @@
-# Welcome to GitHub
+## SUMMER
 
-캡스톤 팀 생성을 축하합니다.
+## 2019년 캡스톤 디자인 17조
 
-## 팀소개 및 페이지를 꾸며주세요.
 
-- readme.md 수정.
+---------------------------------------
 
-- index.md 예시보고 수정.
+### 1. 프로젝트 소개
 
-- 수정후 팀페이지 확인하여 점검.
 
-**팀페이지 주소** -> https://kookmin-sw.github.io/ `{{자신의 리파지토리 아이디}}`
+TED와 같은 영어 강연에서 전문적이고 긴 내용을 사람들이 한번에 이해하기는 어렵다. 이러한 강연은 길이가 길어서 집중하는데 한계가 있고 중요한 부분을 놓치게 된다. 따라서 강연을 다시 보거나 음성을 녹음하는 등의 방법으로 내용을 다시 이해하려 한다. 이러한 과정에서 착안하여 음성 데이터를 텍스트로 변환한 후 중요 문장 단위로 추출하여 제공해주는 프로젝트를 계획하였다.  
+(TED는 기술, 오락, 디자인 등과 관련된 강연회이다.)
 
-**예시)** 1조  https://kookmin-sw.github.io/2018-cap-1
 
-## readme파일에 아래와 같은 내용들을 추가하세요.
+이 프로젝트의 전체적인 구조 및 개발 내용은 크게 3가지로 나뉜다.  
+  
+-  음성인식을 위해 외부 API(Google Speech-to-Text API)를 사용하여 음성데이터를 텍스트로 변환한 후 그 데이터를 서버에 저장한다.  
 
-### 1. 프로잭트 소개
+-  서버에 저장된 텍스트 데이터를 요약 알고리즘을 적용하여 핵심 문장으로만 요약되도록 데이터를 가공한다.
 
-프로젝트
+-  가공된 데이터를 다시 가져와서 사용자에게 제공한다.
 
-### 2. 소개 영상
 
-프로젝트 소개하는 영상을 추가하세요
+### Abstract
+
+It is difficult for people to understand the professional and long contents of English lectures like TED* at once. These lectures are long, so people have a limited concentration and miss the important part. Therefore, they try to understand the content again, such as re-viewing the lecture or recording a voice. In this process, we have planned a project that converts voice data into text and extracts it in units of import agreements.
+
+The overall structure and development of this project are divided into three main categories.
+
+-  For voice recognition, we use external API (Google Speech-to-Text API) to convert voice data to text and store the data in server.
+
+-  Apply the summarization algorithm to the text data stored on the server to process the data so that it is summarized as a core sentence only.
+
+
+-  Bring the processed data back to the user.
+
+
+
+---------------------------------------
+
+### 2. 시연 영상
+
+[![Video Label](https://img.youtube.com/vi/hhs1IOTSo3Y/0.jpg)](https://youtu.be/hhs1IOTSo3Y)
+
+---------------------------------------
 
 ### 3. 팀 소개
 
-팀을 소개하세요.
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
-
-### 4. 사용법
-
-소스코드제출시 설치법이나 사용법을 작성하세요.
-
-### 5. 기타
-
-추가적인 내용은 자유롭게 작성하세요.
+#### Professor : **박수현 교수님**
 
 
-## Markdown을 사용하여 내용꾸미기
+#### 1. 팀장 : 김기성
 
-Markdown은 작문을 스타일링하기위한 가볍고 사용하기 쉬운 구문입니다. 여기에는 다음을위한 규칙이 포함됩니다.
+- 학번 : 20133193
 
-```markdown
-Syntax highlighted code block
+- 역할 : TF-IDF 와 TextRank 알고리즘을 이용한 텍스트 요약 기능을 구현.
 
-# Header 1
-## Header 2
-### Header 3
+- E-mail : kimgisuo@gmail.com
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+#### 2. 팀원 : 김윤성
 
-**Bold** and _Italic_ and `Code` text
+- 학번 : 20133210
 
-[Link](url) and ![Image](src)
-```
+- 역할 : TF-IDF 와 TextRank 알고리즘을 이용한 텍스트 요약 기능을 구현.
 
-자세한 내용은 [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- E-mail : msmf3@naver.com
 
-### Support or Contact
 
-readme 파일 생성에 추가적인 도움이 필요하면 [도움말](https://help.github.com/articles/about-readmes/) 이나 [contact support](https://github.com/contact) 을 이용하세요.
+#### 3. 팀원 : 양성호
+
+- 학번 : 20133235
+
+- 역할 : UI설계 및 구현, Google Speech API 호출 및 Time Stamp 와 Hash Tag 기능을 구현. Django와 MongoDB를 이용해 서버를 구축하고 데이터를 관리.
+
+- E-mail : ysh827@kookmin.ac.kr 
+
+
+#### 4. 팀원 : 정경진
+
+- 학번 : 20153225
+
+- 역할 : UI설계 및 구현, Google Speech API 호출 및 Time Stamp 와 Hash Tag 기능을 구현. Django와 MongoDB를 이용해 서버를 구축하고 데이터를 관리.
+
+- E-mail : okyungjin@gmail.com
+
+
+#### 5. 팀원 : 정예원
+
+- 학번 : 20165161
+
+- 역할 : UI설계 및 구현, Google Speech API 호출 및 Time Stamp 와 Hash Tag 기능을 구현. Django와 MongoDB를 이용해 서버를 구축하고 데이터를 관리.
+
+- E-mail : yes3427@gmail.com
+
+
+---------------------------------------
+
+### 4. 사용자 메뉴얼
+
+<img src="https://github.com/kookmin-sw/2019-cap1-2019_17/blob/master/img/사용자매뉴얼.png" width="100%"></img>
+
+
+
+
